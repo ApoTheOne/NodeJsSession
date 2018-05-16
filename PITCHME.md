@@ -121,7 +121,8 @@ obj.myFunc()
 ```
 ---
 ##### Lexical Scope
-```let obj = {
+```
+let obj = {
   myVar: 'foo',
   
   myFunc: function() { 
