@@ -206,18 +206,18 @@ var n1 = getCount(); // n1 now equals 1
 var n2 = getCount(); // n2 now equals 2
 ```
 ---
-IO operations
+IO operations  
 
-read file, DB calls,
-In C#, Java multi threaded app
-In nodejs single threaded event loop
+read file, DB calls,  
+In C#, Java multi threaded app  
+In nodejs single threaded event loop  
 
-callback
+callback  
 events
 
 ---
 THANK YOU!
-Sources:
+Sources:  
 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)  
 [Medium](https://medium.com/tfogo/advantages-and-pitfalls-of-arrow-functions-a16f0835799e)  
 [Quora](https://www.quora.com/How-do-I-explain-JavaScript-closures-to-a-child)
