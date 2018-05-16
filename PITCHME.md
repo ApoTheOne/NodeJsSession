@@ -76,10 +76,10 @@ console.log(counter);
 ```
 ---
 ##### Pros of IIFE:
-a) Called once, can also be used to initialize variables
-b) Improving performance, since javascript first looks upto local scope
-c) Simulatting or creating a new scope
-d) Avoding scope pollution 
+- a) Called once, can also be used to initialize variables |
+- b) Improving performance, since javascript first looks upto local scope |
+- c) Simulatting or creating a new scope |
+- d) Avoding scope pollution  |
 ---
 
 ##### Arrow functions:
