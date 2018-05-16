@@ -173,3 +173,6 @@ events
 
 ---
 THANK YOU!
+Sources:
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
+[Medium](https://medium.com/tfogo/advantages-and-pitfalls-of-arrow-functions-a16f0835799e)
