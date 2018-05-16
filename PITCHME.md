@@ -92,7 +92,63 @@ console.log(counter);
 ```
 param => expression
 ```
-
+##### Context
+---
+let obj = {
+  myVar: 'foo',
+  
+  myFunc: function() {
+    console.log(this.myVar)
+  }
+}
+obj.myFunc() // foo
+---
+```
+let obj = {
+  myVar: 'foo',
+  
+  myFunc: function() { 
+    console.log(this.myVar)   
+ 
+    setTimeout(function() {
+      console.log(this.myVar)
+    }, 1000)
+  }
+}
+obj.myFunc()
+```
+---
+##### Lexical Scope
+```let obj = {
+  myVar: 'foo',
+  
+  myFunc: function() { 
+    let self = this
+    console.log(this.myVar)  
+  
+    setTimeout(function() {
+      console.log(self.myVar)
+    }, 1000)
+  }
+}
+obj.myFunc() // foo ... then... foo
+```
+---
+###### Problem solved with arrow functions:
+```
+let obj = {
+  myVar: 'foo',
+  
+  myFunc: function() { 
+    console.log(this.myVar)  
+  
+    setTimeout(() => {
+      console.log(this.myVar)
+    }, 1000)
+  }
+}
+obj.myFunc() // foo ... then... foo
+```
 ---
 IO operations
 
@@ -104,3 +160,4 @@ callback
 events
 
 ---
+THANK YOU!
