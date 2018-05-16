@@ -92,8 +92,9 @@ console.log(counter);
 ```
 param => expression
 ```
-##### Context
 ---
+##### Context
+```
 let obj = {
   myVar: 'foo',
   
@@ -102,6 +103,7 @@ let obj = {
   }
 }
 obj.myFunc() // foo
+```
 ---
 ```
 let obj = {
