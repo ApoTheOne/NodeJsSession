@@ -29,9 +29,11 @@ var myFunction = function() {
 }
 ---
 ##### Named function expression
+```
 var myFunction = function namedFunction(){
     statements
 }
+```
 Benefit of named function expression is that in case we encountered an error, 
 the stack trace will contain the name of the function, making it easier to find the origin of the error.
 ---
