@@ -1,6 +1,6 @@
 ## NodeJs
 ---
-###Functions:
+### Functions:
 ##### Function statement:
 ```
 function calcRectArea(width, height) {
