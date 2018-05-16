@@ -165,6 +165,47 @@ let obj = {
 obj.myFunc() // undefined
 ```
 ---
+##### Closures
+Created when an inner function tries to access variables and other objects, of the parent function.
+Eg. 
+```
+function parent() {
+    var name = “John”;
+    var child = function () {
+        console.log (name); };
+    return child;
+}
+```
+Closures are uni-directional i.e. from parent to child
+---
+Each function has a separate scope
+```
+function parent() {
+    var name = “John”;
+    var child = function () {
+        console.log (name); };
+    return child;
+}
+var child = parent();
+child(); 
+// The name would still be accessible, even after exiting parent
+```
+---
+```
+function makeCounter {
+  var counter = 0; // this variable should normally go away, but it won't!
+  return function() {
+    counter++;
+    return counter;
+  }
+}
+var getCount = makeCounter();
+// the function makeCounter has finished, so normally var counter
+// would have been forgotten about!
+var n1 = getCount(); // n1 now equals 1
+var n2 = getCount(); // n2 now equals 2
+```
+---
 IO operations
 
 read file, DB calls,
@@ -177,5 +218,6 @@ events
 ---
 THANK YOU!
 Sources:
-[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
-[Medium](https://medium.com/tfogo/advantages-and-pitfalls-of-arrow-functions-a16f0835799e)
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)  
+[Medium](https://medium.com/tfogo/advantages-and-pitfalls-of-arrow-functions-a16f0835799e)  
+[Quora](https://www.quora.com/How-do-I-explain-JavaScript-closures-to-a-child)
