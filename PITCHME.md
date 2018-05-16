@@ -1,7 +1,7 @@
 ## NodeJs
 ---
 ### Functions:
-##### Function statement:
+##### 1) Function statement:
 ```
 function calcRectArea(width, height) {
   
@@ -11,7 +11,7 @@ function calcRectArea(width, height) {
  console.log(calcRectArea(5, 6));
 ```
 ---
-##### Function expression:
+##### 2) Function expression:
 ```
 var getRectArea = function(width, height) {
 
@@ -23,7 +23,7 @@ var getRectArea = function(width, height) {
 // expected output: 12
 ```
 ---
-##### Anonymous methods
+##### 2. a) Anonymous methods
 var myFunction = function() {
     statements
 }
@@ -35,7 +35,7 @@ var myFunction = function namedFunction(){
 Benefit of named function expression is that in case we encountered an error, 
 the stack trace will contain the name of the function, making it easier to find the origin of the error.
 ---
-##### IIFE
+##### 2. b) IIFE
 ```
 var counter = 0;
 var f = function(){
