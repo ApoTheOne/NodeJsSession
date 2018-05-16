@@ -150,6 +150,18 @@ let obj = {
 obj.myFunc() // foo ... then... foo
 ```
 ---
+###### Beware
+```
+let obj = {
+  myVar: 'foo',
+  
+  myFunc: () => { 
+    console.log(this.myVar)  
+  }
+}
+obj.myFunc() // undefined
+```
+---
 IO operations
 
 read file, DB calls,
