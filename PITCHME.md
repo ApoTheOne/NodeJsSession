@@ -38,6 +38,8 @@ Benefit of named function expression is that in case we encountered an error,
 the stack trace will contain the name of the function, making it easier to find the origin of the error.
 ---
 ##### 2. b) IIFE
+
+Normal function, not an IIFE
 ```
 var counter = 0;
 var f = function(){
@@ -49,6 +51,8 @@ counter++;
 f();
 ```
 ---
+Normal function, not an IIFE  
+Scope Pollution
 ```
 var counter = 0;
 var f = function(){
@@ -60,6 +64,7 @@ counter++;
 f();
 ```
 ---
+IIFE
 ```
 var counter = 0;
 (function(){
